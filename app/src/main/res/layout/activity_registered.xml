@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <LinearLayout android:padding="10dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditText android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="@string/text_user_name"
+        android:id="@+id/et_user"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="@string/text_user_age"
+        android:id="@+id/et_age"/>
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="@string/text_user_company"
+        android:id="@+id/et_company"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="@string/text_desc"
+        android:id="@+id/et_desc"
+        android:lines="2"/>
+
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/mRadioGroup">
+
+        <RadioButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/rb_admin"
+            android:text="@string/text_admin"
+            android:checked="true"/>
+
+        <RadioButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/rb_staff"
+            android:text="@string/text_staff"
+            android:layout_marginLeft="20dp"/>
+
+    </RadioGroup>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="@string/text_password"
+        android:id="@+id/et_pass"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="@string/text_password_again"
+        android:id="@+id/et_password"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="@string/text_email"
+        android:id="@+id/et_email"/>
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@string/text_register_remind"
+        android:textSize="15sp"
+        android:textColor="@color/colorAccent"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/btnRegistered"
+        android:text="@string/text_registered"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_bg"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>
